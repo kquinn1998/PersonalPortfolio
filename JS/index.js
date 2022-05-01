@@ -7,15 +7,21 @@ function get_repos() {
 }
 
 function process_repos(repos) {
-    var gitContainer = document.getElementById("myRepos");
+    var repo_names_container = document.getElementById("repo_names");
+    var repo_last_updated_container = document.getElementById("repo_last_updated");
     for (var i = 0; i < repos.length; i++) {
-        
         var li = document.createElement("li");
         var a = document.createElement("a");
         a.setAttribute('href', repos[i].html_url);
         a.innerHTML = repos[i].name + '.';
         li.className = "repo-item";
         li.appendChild(a);
-        gitContainer.appendChild(li);
+        repo_names_container.appendChild(li);
+
+        var date = new Date(repos[i].updated_at)
+        var li = document.createElement("li");
+        li.innerHTML = date.toDateString();
+        li.className = "repo-item";
+        repo_last_updated_container.appendChild(li);
     }
 }
