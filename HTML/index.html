@@ -12,39 +12,48 @@
   </head>
 
   <body onload="get_repos()">
-    <div class="bg-image"></div>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="bg-image">
 
-      <div class="collapse navbar-collapse"></div>
+      <nav class="navbar navbar-expand-md navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse " id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto nav-item-size">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
+        <div class="collapse navbar-collapse"></div>
+
+        <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto nav-item-size">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container text-center">
+        <div class="row mb-5 mt-5 justify-content-center">
+          <div class="col-sm-6 bg-text">
+            <img src="../Assets/avatar.png" alt="Avatar" class="avatar">
+            <h1>I am Kevin</h1>
+            <p>And I'm a Software Engineer working for Verizon Connect.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-6 bg-repos">
+            <img src="../Assets/GitHub-Logo.png" alt="Avatar" class="avatar">
+            <h1>Git Projects</h1>
+            <div id="myRepos"></div>
+          </div>
+        </div>
       </div>
-    </nav>
-
-    <div class="bg-text">
-      <img src="../Assets/avatar.png" alt="Avatar" class="avatar">
-      <h1>I am Kevin</h1>
-      <p>And I'm a Software Engineer working for Verizon Connect.</p>
-    </div>
-
-    <div class="bg-repos">
-      <h1>Git Projects</h1>
-      <div id="myRepos"></div>
     </div>
 
     <script src="../JS/index.js"></script>
