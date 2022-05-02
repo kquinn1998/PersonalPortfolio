@@ -7,6 +7,8 @@ function get_repos() {
 }
 
 function process_repos(repos) {
+    repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+
     var repo_names_container = document.getElementById("repo_names");
     var repo_last_updated_container = document.getElementById("repo_last_updated");
     for (var i = 0; i < repos.length; i++) {
