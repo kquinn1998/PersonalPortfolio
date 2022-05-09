@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="../Assets/avatar.png" />
+    
     <title>Kevin Quinn</title>
 
     <!-- Bootstrap core CSS -->
@@ -37,7 +41,7 @@
         </div>
       </nav>
 
-      <div class="container text-center">
+      <div class="container-fluid text-center">
         <div class="row mb-5 mt-5 justify-content-center">
           <div class="col-md-auto bg-text">
             <img src="../Assets/avatar.png" alt="Avatar" class="avatar">
@@ -47,7 +51,22 @@
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-md-auto bg-repos">
+          <div class="col-md-5 mr-5 bg-repos">
+            <img src="../Assets/GitHub-Logo.png" alt="Avatar" class="avatar">
+            <h1>Git Projects</h1>
+            <div class="row">
+              <div class="col-md">
+                <p>Name :</p>
+                <div id="repo_names"></div>
+              </div>
+              <div class="col-md">
+                <p>Last Updated :</p>
+                <div id="repo_last_updated"></div>
+              </div>
+            </div>   
+          </div>
+
+          <div class="col-md-5  bg-repos">
             <img src="../Assets/GitHub-Logo.png" alt="Avatar" class="avatar">
             <h1>Git Projects</h1>
             <div class="row">
